@@ -14,7 +14,7 @@ function twoSum(arr, target) {
   return null;
 }
 
-// <sol 2 - using has map>
+// <sol 2 - using hash map>
 function optTowSum(arr, target) {
   let solHash = {};
 
