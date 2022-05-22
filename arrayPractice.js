@@ -31,5 +31,3 @@ function optTowSum(arr, target) {
 }
 
 console.log(optTowSum([1, 2, 4, 3, 5, 7], 11));
-
-//
