@@ -101,7 +101,6 @@ console.log(mergeSort([12, 1, 5, 8, 2, 3, 4, 6, 20, 17]));
 
 // ==================================== Quick Sort ============================================
 function quickSort(arr, start = 0, end = arr.length - 1) {
-  debugger;
   if (start >= end) {
     return;
   }
@@ -111,7 +110,6 @@ function quickSort(arr, start = 0, end = arr.length - 1) {
   return arr;
 }
 function partition(arr, start, end) {
-  debugger;
   let pivot = arr[end];
   let index = start;
   for (let i = start; i < end; i++) {
