@@ -29,3 +29,26 @@ function checkPermutation(str1, str2) {
   }
   return true;
 }
+
+//group Anangram problem
+var groupAnagrams = function (strs) {
+  let hashMap = new Map();
+  let result = [];
+  for (item of strs) {
+    let hashedStr = createHash(item);
+    if (!hashMap.has(hashedStr)) {
+      hashMap.set(hashedStr, []);
+    }
+    hashMap.get(hashedStr).push(item);
+  }
+  hashMap.forEach((value) => result.push(value));
+  return result;
+};
+
+function createHash(str) {
+  let arr = new Array(26).fill(0);
+  for (char of str) {
+    arr[char.charCodeAt() - "a".charCodeAt()]++;
+  }
+  return arr.join(",");
+}
